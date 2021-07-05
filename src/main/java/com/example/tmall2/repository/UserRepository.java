@@ -7,4 +7,7 @@ public interface UserRepository extends CrudRepository <UserDO,Long>{
 
     UserDO save(UserDO userDO);
 
+    UserDO findUserDOByLoginName(String loginName);
+
+    UserDO findUserDOByUserId(Long userId);
 }
